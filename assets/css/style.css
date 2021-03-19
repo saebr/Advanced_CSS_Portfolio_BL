@@ -1,0 +1,57 @@
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color: grey;
+    color: #91cbcd;
+}
+
+nav ul {
+    display:flex;
+    justify-content: space-between;
+    min-width: 300px;
+}
+
+nav a {
+    color: #b9C6ae;
+    font-size: 150%;
+    padding: 1%;
+}
+
+section {
+    flex: 1 1 0;
+    padding-right: 5%;
+}
+nav a {
+  color: #91cbcd;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+
+
+
+
+
+/* Changes page to adjust to a mobile browser setup */
+@media screen and (max-width: 768px) {
+    header, main {
+      flex-direction: column;
+    }
+  
+    section {
+      padding-right: 0;
+    }
+  
+    aside {
+      width: 100%;
+      text-align: center;
+    }
+  }
+
