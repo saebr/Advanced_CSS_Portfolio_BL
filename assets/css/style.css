@@ -1,38 +1,77 @@
-body{
+
+
+
+body {
     display: flex;
     flex-direction: column;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0%;
+
+}
+
+header h1{
+  background-color: #91cbcd;
+  color: grey;
+  padding: .5%;
+  padding-left: 3%;
+  font-size: 300%;
 }
 
 header {
     display:flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 1%;
     background-color: grey;
     color: #91cbcd;
 }
 
 nav ul {
     display:flex;
-    justify-content: space-between;
-    min-width: 300px;
+    justify-content: space-around;
+    min-width: 500px;
+}
+
+nav li {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 3%;
+  text-decoration: underline 3px;
 }
 
 nav a {
+    display:flex;
     color: #b9C6ae;
     font-size: 150%;
-    padding: 1%;
 }
 
 section {
+    display:flex;
     flex: 1 1 0;
     padding-right: 5%;
 }
 nav a {
+  display: flex;
   color: #91cbcd;
   font-weight: bold;
   text-decoration: none;
 }
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-left {
+  width: 75%;
+  height: 100vh;
+  padding: 1%;
+
+}
+
+.flex-right {
+  width: 25%;
+  padding: 1%;
+}
+
 
 
 
@@ -52,6 +91,10 @@ nav a {
     aside {
       width: 100%;
       text-align: center;
+    }
+
+    .flex-container {
+      flex-direction: column
     }
   }
 
