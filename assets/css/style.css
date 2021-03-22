@@ -1,3 +1,6 @@
+root: {
+
+}
 
 
 
@@ -9,20 +12,28 @@ body {
 
 }
 
+
+header {
+  display:flex;
+  align-items: center;
+  background-color: #31343d;
+  color: #91cbcd;
+}
+
 header h1{
   background-color: #91cbcd;
-  color: grey;
+  color: #31343d;
   padding: .5%;
   padding-left: 3%;
   font-size: 300%;
 }
 
-header {
-    display:flex;
-    align-items: center;
-    background-color: grey;
-    color: #91cbcd;
+header a{
+  color: inherit;
+  text-decoration: none;
 }
+
+
 
 nav ul {
     display:flex;
@@ -72,6 +83,43 @@ nav a {
   padding: 1%;
 }
 
+.namecard{
+  font-size: 60px;
+  margin-left: 10%;
+  margin-right: 10%;
+  border-right: 4px solid #31343d;
+}
+
+.aboutme {
+  display: flex;
+  align-self: auto;
+  justify-content: space-around
+}
+
+
+
+
+footer {
+  display:flex;
+  align-items: center;
+  color: #31343d;
+}
+
+footer ul {
+  display:flex;
+  justify-content: space-between;
+  min-width: 500px;
+}
+
+footer li {
+display: flex;
+justify-content: center;
+text-decoration: underline 3px;
+color: inherit;
+font-size: 175%;
+margin: 10%;
+}
+
 
 
 
@@ -88,9 +136,8 @@ nav a {
       padding-right: 0;
     }
   
-    aside {
-      width: 100%;
-      text-align: center;
+    footer {
+      flex-direction: Column;
     }
 
     .flex-container {
